@@ -44,6 +44,7 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #94a3b8;
         }
+        
         /* 动画定义 */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
@@ -67,18 +68,20 @@
     </style>
 </head>
 <body class="text-slate-700 antialiased scroll-smooth">
-<nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 border-b border-slate-200">
+<nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 border-b border-slate-200" id="main-nav">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16 items-center">
             <div class="flex items-center gap-2">
                 <span class="material-symbols-outlined text-purple-600">flutter</span>
                 <span class="font-bold text-lg tracking-tight text-slate-900">学术视界 · 蝴蝶宝贝</span>
             </div>
-            <div class="hidden md:flex items-center space-x-8">
-                <a class="text-slate-600 hover:text-purple-600 font-medium transition" href="#abstract">摘要与背景</a>
-                <a class="text-slate-600 hover:text-purple-600 font-medium transition" href="#methodology">研究对象</a>
-                <a class="text-slate-600 hover:text-purple-600 font-medium transition" href="#findings">核心发现</a>
-                <a class="text-slate-600 hover:text-purple-600 font-medium transition" href="#discussion">困境与协商</a>
+            <div class="hidden md:flex items-center space-x-4">
+                <div class="flex space-x-6 mr-4">
+                    <a class="text-slate-600 hover:text-purple-600 font-medium transition" href="#abstract">摘要与背景</a>
+                    <a class="text-slate-600 hover:text-purple-600 font-medium transition" href="#methodology">研究对象</a>
+                    <a class="text-slate-600 hover:text-purple-600 font-medium transition" href="#findings">核心发现</a>
+                    <a class="text-slate-600 hover:text-purple-600 font-medium transition" href="#discussion">困境与协商</a>
+                </div>
             </div>
         </div>
     </div>
@@ -89,8 +92,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm font-semibold">
-                    <span class="material-symbols-outlined text-sm">school</span>
-                    云南大学 · 新媒体研究课程优秀论文
+                    <span class="material-symbols-outlined text-sm">radio_button_unchecked</span>
+                    云南大学 · 新媒体研究课程论文
                 </div>
                 <h1 class="text-4xl lg:text-5xl font-bold leading-tight text-slate-900">
                     短视频平台<br>
@@ -99,7 +102,7 @@
                 <p class="text-xl text-slate-600 font-light italic serif">——以“蝴蝶宝贝”（大疱性表皮松解症）群体为例</p>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
                     <p class="text-sm text-slate-500 mb-2 font-bold">论文作者团队</p>
-                    <p class="text-slate-800">戴润琦、把茜迪、王睿婕、邹瑞宝、杨壹、曾汀、黎藜</p>
+                    <p class="text-slate-800">把茜迪、戴润琦、王睿婕、邹瑞宝、杨壹、曾汀</p>
                     <p class="text-xs text-slate-400 mt-2">2025年12月28日</p>
                 </div>
                 <div class="flex gap-4">
@@ -147,350 +150,4 @@
             <div class="md:col-span-8 space-y-6">
                 <h3 class="text-xl font-bold text-slate-800 border-b pb-2">论文摘要</h3>
                 <p class="text-slate-600 leading-relaxed">
-                    在深度媒介化时代，短视频平台成为罕见病群体实现社会可见性、获取生存资源的关键场域。本文通过数字田野调查与深度访谈，揭示了“蝴蝶宝贝”博主在抖音平台的生存图景：
-                </p>
-                <ul class="space-y-3">
-                    <li class="flex gap-3 bg-purple-50 p-3 rounded-lg">
-                        <span class="material-symbols-outlined text-purple-600 shrink-0">check_circle</span>
-                        <span class="text-slate-700 text-sm"><strong>动力机制：</strong>呈现“数字化生计-社会支持-主体重构”的递进关系。</span>
-                    </li>
-                    <li class="flex gap-3 bg-purple-50 p-3 rounded-lg">
-                        <span class="material-symbols-outlined text-purple-600 shrink-0">check_circle</span>
-                        <span class="text-slate-700 text-sm"><strong>叙事策略：</strong>形成“景观化修剪”、“励志叙事”与“技术借力”的生存智慧。</span>
-                    </li>
-                    <li class="flex gap-3 bg-purple-50 p-3 rounded-lg">
-                        <span class="material-symbols-outlined text-purple-600 shrink-0">check_circle</span>
-                        <span class="text-slate-700 text-sm"><strong>身份协商：</strong>试图从“悲情客体”转向“反凝视”的主体，打破刻板印象。</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-16 bg-slate-50" id="methodology">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-slate-900 mb-4">研究方法与对象</h2>
-            <p class="text-slate-600 max-w-2xl mx-auto">
-                研究者对相关博主进行了为期2个月的集中观察（2025.11-12），并对6名在抖音持续活跃的“蝴蝶宝贝”进行了深度半结构化访谈。
-            </p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 card-hover relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
-                    <span class="material-symbols-outlined text-6xl text-blue-500">male</span>
-                </div>
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-xl">M1</div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">18岁 · 中度</h4>
-                        <p class="text-xs text-slate-500">粉丝数: 2.6万</p>
-                    </div>
-                </div>
-                <p class="text-sm text-slate-600 italic border-l-2 border-blue-400 pl-3 mb-3">
-                    "有流量了才能挣点钱，买昂贵的敷料...这是生活出路。"
-                </p>
-                <div class="flex flex-wrap gap-2 mt-4">
-                    <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-500">手指未黏连</span>
-                    <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-500">积极变现</span>
-                </div>
-            </div>
-            <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 card-hover relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
-                    <span class="material-symbols-outlined text-6xl text-pink-500">female</span>
-                </div>
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 font-bold text-xl">F1</div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">36岁 · 轻度</h4>
-                        <p class="text-xs text-slate-500">粉丝数: 5241</p>
-                    </div>
-                </div>
-                <p class="text-sm text-slate-600 italic border-l-2 border-pink-400 pl-3 mb-3">
-                    "不知道拍什么能获得流量，技术有限，没人帮我拍。"
-                </p>
-                <div class="flex flex-wrap gap-2 mt-4">
-                    <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-500">技术困惑</span>
-                    <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-500">轻度症状</span>
-                </div>
-            </div>
-            <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 card-hover relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
-                    <span class="material-symbols-outlined text-6xl text-blue-500">male</span>
-                </div>
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-xl">M3</div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">28岁 · 重度</h4>
-                        <p class="text-xs text-slate-500">粉丝数: 2701</p>
-                    </div>
-                </div>
-                <p class="text-sm text-slate-600 italic border-l-2 border-blue-400 pl-3 mb-3">
-                    "晚上直播会被强行下播...判定我消极负能量、卖惨。"
-                </p>
-                <div class="flex flex-wrap gap-2 mt-4">
-                    <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-500">肢体黏连</span>
-                    <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-500">平台规训</span>
-                </div>
-            </div>
-            <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 card-hover relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
-                    <span class="material-symbols-outlined text-6xl text-pink-500">female</span>
-                </div>
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 font-bold text-xl">F3</div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">14岁 · 中度</h4>
-                        <p class="text-xs text-slate-500">粉丝数: 2243</p>
-                    </div>
-                </div>
-                <p class="text-sm text-slate-600 italic border-l-2 border-pink-400 pl-3 mb-3">
-                    "流量密码是我的手...心情不好时就怼黑粉。"
-                </p>
-                <div class="flex flex-wrap gap-2 mt-4">
-                    <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-500">手指未黏连</span>
-                    <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-500">反叛精神</span>
-                </div>
-            </div>
-            <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 card-hover relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
-                    <span class="material-symbols-outlined text-6xl text-pink-500">female</span>
-                </div>
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 font-bold text-xl">F2</div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">17岁 · 中重度</h4>
-                        <p class="text-xs text-slate-500">粉丝数: 2064</p>
-                    </div>
-                </div>
-                <p class="text-sm text-slate-600 italic border-l-2 border-pink-400 pl-3 mb-3">
-                    "我在抖音上搜剪辑教程...一直在学怎么拍更好。"
-                </p>
-                <div class="flex flex-wrap gap-2 mt-4">
-                    <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-500">技术学习</span>
-                    <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-500">自我提升</span>
-                </div>
-            </div>
-            <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 card-hover relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
-                    <span class="material-symbols-outlined text-6xl text-blue-500">male</span>
-                </div>
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-xl">M2</div>
-                    <div>
-                        <h4 class="font-bold text-slate-900">28岁 · 中度</h4>
-                        <p class="text-xs text-slate-500">粉丝数: 574</p>
-                    </div>
-                </div>
-                <p class="text-sm text-slate-600 italic border-l-2 border-blue-400 pl-3 mb-3">
-                    "小孩子病友更容易受关注，成年人很难。"
-                </p>
-                <div class="flex flex-wrap gap-2 mt-4">
-                    <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-500">流量焦虑</span>
-                    <span class="px-2 py-1 bg-slate-100 rounded text-xs text-slate-500">成人困境</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-16 bg-white" id="findings">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center">媒介实践的核心逻辑</h2>
-        <div class="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden">
-            <div class="flex flex-col md:flex-row border-b bg-slate-50">
-                <button class="flex-1 py-4 px-6 text-center font-medium text-purple-600 bg-white border-b-2 border-purple-600 transition hover:bg-white/50 focus:outline-none flex items-center justify-center gap-2" id="tab-btn-motivation" onclick="switchTab('motivation')">
-                    <span class="material-symbols-outlined">flag</span> 动力机制
-                </button>
-                <button class="flex-1 py-4 px-6 text-center font-medium text-slate-500 hover:text-purple-600 transition focus:outline-none flex items-center justify-center gap-2" id="tab-btn-strategy" onclick="switchTab('strategy')">
-                    <span class="material-symbols-outlined">construction</span> 叙事策略
-                </button>
-                <button class="flex-1 py-4 px-6 text-center font-medium text-slate-500 hover:text-purple-600 transition focus:outline-none flex items-center justify-center gap-2" id="tab-btn-dilemma" onclick="switchTab('dilemma')">
-                    <span class="material-symbols-outlined">error</span> 规则困境
-                </button>
-            </div>
-            <div class="p-8 min-h-[400px]">
-                <div class="space-y-6 animate-fade-in" id="content-motivation">
-                    <div class="grid md:grid-cols-2 gap-8 items-center">
-                        <div class="space-y-4">
-                            <h3 class="text-2xl font-bold text-slate-800">从生存到重构：媒介实践的三重动力</h3>
-                            <div class="space-y-4">
-                                <div class="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
-                                    <h4 class="font-bold text-green-800 flex items-center gap-2"><span class="material-symbols-outlined">payments</span> 数字化生计 (Survival)</h4>
-                                    <p class="text-sm text-green-700 mt-1">
-                                        EB患者年均护理费高达8-10万。平台成为开橱窗、直播带货、寻求捐助的“救济渠道”。<br>
-                                        <span class="italic text-xs block mt-2 opacity-75">"平台对这些弱势群体，多给点流量，是让他们有个生活出路。" —— M1</span>
-                                    </p>
-                                </div>
-                                <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-                                    <h4 class="font-bold text-blue-800 flex items-center gap-2"><span class="material-symbols-outlined">group</span> 社会支持 (Social)</h4>
-                                    <p class="text-sm text-blue-700 mt-1">
-                                        突破身体隔离，建立病友社群，消除社会误解（如“不传染”），获得精神鼓励。<br>
-                                        <span class="italic text-xs block mt-2 opacity-75">"发视频会有很多人鼓励我...让我有信心继续活下去。" —— M1</span>
-                                    </p>
-                                </div>
-                                <div class="p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
-                                    <h4 class="font-bold text-purple-800 flex items-center gap-2"><span class="material-symbols-outlined">face</span> 主体重构 (Identity)</h4>
-                                    <p class="text-sm text-purple-700 mt-1">
-                                        对抗“病人”标签，展示绘画、唱歌等技能，寻求“正常化”的社会身份。<br>
-                                        <span class="italic text-xs block mt-2 opacity-75">"把我们看成正常人就好...就像对待身边的朋友一样。" —— F3</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rounded-xl overflow-hidden shadow-lg h-full">
-                            <img class="w-full h-full object-cover" src="pyramid_chart.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden space-y-6 animate-fade-in" id="content-strategy">
-                    <h3 class="text-2xl font-bold text-slate-800 mb-4">规训下的生存智慧：三大叙事策略</h3>
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600 mb-4">
-                                <span class="material-symbols-outlined">content_cut</span>
-                            </div>
-                            <h4 class="font-bold text-lg mb-2">景观化修剪</h4>
-                            <p class="text-sm text-slate-600">
-                                为了应对平台的“视觉净化”审核（如血液、伤口被判定违规），博主不得不对身体进行打码、遮挡，进行自我审查，在“展示病情”与“避免封号”间走钢丝。
-                            </p>
-                        </div>
-                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                            <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 mb-4">
-                                <span class="material-symbols-outlined js-replaced-missing-icon">radio_button_unchecked</span>
-                            </div>
-                            <h4 class="font-bold text-lg mb-2">励志叙事 (情感资本)</h4>
-                            <p class="text-sm text-slate-600">
-                                为了迎合大众期待，避免被视为“乞讨”或“卖惨”，博主们刻意展现坚韧、乐观的一面（如唱歌、做饭），积累“情感资本”以换取社会认同。
-                            </p>
-                        </div>
-                        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mb-4">
-                                <span class="material-symbols-outlined">smart_toy</span>
-                            </div>
-                            <h4 class="font-bold text-lg mb-2">技术借力 (技术中介)</h4>
-                            <p class="text-sm text-slate-600">
-                                利用AI教程学习剪辑，使用磁吸支架克服手部残疾，通过技术工具弥补生理缺陷，将数字技术作为延伸身体能力的“拐杖”。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden space-y-6 animate-fade-in" id="content-dilemma">
-                    <div class="grid md:grid-cols-2 gap-12">
-                        <div class="space-y-6">
-                            <h3 class="text-2xl font-bold text-slate-800">流量的悖论与困境</h3>
-                            <ul class="space-y-4">
-                                <li class="flex items-start gap-3">
-                                    <span class="material-symbols-outlined text-red-500 mt-1">trending_down</span>
-                                    <div>
-                                        <strong class="text-slate-900">流量逻辑固化：</strong>
-                                        <p class="text-sm text-slate-600">平台偏好“强同情点”。儿童病友天然流量高，成人博主如果只发生活日常（如做饭、爬山）往往无人问津，被迫回归“伤口叙事”。</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="material-symbols-outlined text-red-500 mt-1">gavel</span>
-                                    <div>
-                                        <strong class="text-slate-900">审核机制的双重标准：</strong>
-                                        <p class="text-sm text-slate-600">越露伤口流量越高（猎奇心理），但越露伤口越容易被限流或封禁（内容风控）。博主陷入“死循环”。</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="material-symbols-outlined text-red-500 mt-1">videocam_off</span>
-                                    <div>
-                                        <strong class="text-slate-900">技术能力的先天壁垒：</strong>
-                                        <p class="text-sm text-slate-600">缺乏专业运营知识，身体原因导致拍摄剪辑极其耗时。M2运营数月仅500粉，F3因不懂运营被多次限流。</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="bg-slate-100 p-6 rounded-xl flex items-center justify-center">
-                            <img class="rounded-lg shadow-md max-w-xs w-full" src="algorithm_maze.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-16 bg-slate-900 text-white relative overflow-hidden" id="discussion">
-    <div class="absolute top-0 left-0 w-64 h-64 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-    <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <h2 class="text-3xl font-bold mb-12 text-center serif">身份的协商：凝视与反凝视</h2>
-        <div class="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
-            <div class="order-2 md:order-1">
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-                    <div class="relative bg-slate-800 p-8 rounded-lg ring-1 ring-white/10">
-                        <h3 class="text-xl font-bold mb-4 text-purple-300">被凝视 (The Gaze)</h3>
-                        <p class="text-slate-300 mb-6 leading-relaxed">
-                            观众往往带着“同情”、“猎奇”甚至“审判”的目光。
-                            <br><br>
-                            <span class="text-slate-400 italic">“评论里经常有人说我们是在博同情，甚至骂我们‘装可怜’。” —— M1</span>
-                        </p>
-                        <div class="w-full h-px bg-slate-600 my-6"></div>
-                        <h3 class="text-xl font-bold mb-4 text-green-300">反凝视 (Anti-Gaze)</h3>
-                        <p class="text-slate-300 leading-relaxed">
-                            博主通过主动的科普、积极的生活展示、甚至回怼恶评，试图夺回定义权。他们不仅是“患者”，更是“生活者”。
-                            <br><br>
-                            <span class="text-slate-400 italic">“我从来没觉得自己可怜...拍视频是为了生活，不是博同情。” —— F3</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="order-1 md:order-2 text-center md:text-left">
-                <h3 class="text-2xl font-bold text-white mb-4">从“他者”到“主体”</h3>
-                <p class="text-slate-300 mb-6 text-lg">
-                    短视频平台不仅是赚钱的工具，更是这一边缘群体争夺社会可见性、重塑自我认同的战场。
-                </p>
-                <p class="text-slate-400">
-                    研究总结认为，“蝴蝶宝贝”的媒介实践本质是<strong>在脆弱生理基础上平衡生存需求与主体尊严的复杂协商</strong>。他们通过屏幕，试图将公众的视线从“伤口”引向“人”本身。
-                </p>
-                <div class="mt-8 flex justify-center md:justify-start">
-                    <span class="material-symbols-outlined text-6xl text-slate-700 animate-pulse">visibility</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="bg-white py-12 border-t border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <h4 class="font-serif text-xl font-bold text-slate-900">云南大学 · 新闻学院</h4>
-        <p class="text-slate-500">2025 新媒体研究课程期末论文可视化展示</p>
-        <p class="text-xs text-slate-400 mt-8">
-            注：本页面基于论文《短视频平台罕见病博主的媒介实践研究——以蝴蝶宝贝群体为例》内容生成。<br>
-            仅用于学术交流展示，文中引用案例均为匿名化处理。
-        </p>
-    </div>
-</footer>
-
-<script>
-    function switchTab(tabName) {
-        // Hide all contents
-        document.getElementById('content-motivation').classList.add('hidden');
-        document.getElementById('content-strategy').classList.add('hidden');
-        document.getElementById('content-dilemma').classList.add('hidden');
-
-        // Reset all buttons styles
-        const buttons = ['motivation', 'strategy', 'dilemma'];
-        buttons.forEach(btn => {
-            const el = document.getElementById(`tab-btn-${btn}`);
-            el.classList.remove('text-purple-600', 'border-b-2', 'border-purple-600');
-            el.classList.add('text-slate-500');
-        });
-
-        // Show selected content
-        document.getElementById(`content-${tabName}`).classList.remove('hidden');
-
-        // Highlight selected button
-        const activeBtn = document.getElementById(`tab-btn-${tabName}`);
-        activeBtn.classList.remove('text-slate-500');
-        activeBtn.classList.add('text-purple-600', 'border-b-2', 'border-purple-600');
-    }
-</script>
-
-</body>
-</html>
+                    在深度媒介化时代，短视频平台成为罕见病群体实现社会可见性
